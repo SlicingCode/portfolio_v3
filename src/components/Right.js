@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 
 const Right = () => {
   return (
-    <div className='w-min flex flex-col height-fix md:min-h-screen pl-1 pr-1'>
+    <div className='w-min flex flex-col height-fix md:min-h-screen'>
       <motion.h1
         initial={{
           x: 200,
@@ -14,10 +14,10 @@ const Right = () => {
         }}
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
-        className='text-white main-text cursor-pointer md:text-xl focus:outline-none select-none pt-4 md:pr-4'>
+        className='text-white main-text cursor-pointer md:text-xl focus:outline-none select-none pt-4 pr-4 hidden md:flex'>
         <a>Contact</a>
       </motion.h1>
-      <div className='h-full flex md:justify-center items-center ml-10 md:ml-0'>
+      <div className='h-full flex md:justify-center items-center ml-1 md:ml-0'>
         <motion.h1
           initial={{
             x: 200,

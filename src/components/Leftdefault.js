@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
 import { FiGithub } from 'react-icons/fi';
@@ -8,9 +7,9 @@ import { FiMessageSquare } from 'react-icons/fi';
 
 import arrowSvg from '../assets/images/Arrow.svg';
 
-const Left = () => {
+const Leftdefault = () => {
   return (
-    <div className='w-min flex flex-col justify-between height-fix md:min-h-screen md:pl-4 md:pr-4 pl-1 pr-1'>
+    <div className='w-min flex flex-col justify-between height-fix md:min-h-screen md:pl-4 md:pr-4 pl-1 pr-1 sticky top-0 mr-5 md:mr-0'>
       <motion.h1
         initial={{
           y: -200,
@@ -24,36 +23,7 @@ const Left = () => {
         tabIndex={1}>
         CP
       </motion.h1>
-      <motion.h1
-        initial={{
-          x: -200,
-          transition: { type: 'spring', duration: 1.5, delay: 1 },
-        }}
-        animate={{
-          x: 0,
-          rotate: -90,
-          transition: { type: 'spring', duration: 1.5, delay: 1 },
-        }}
-        whileHover={{ scale: 1.1 }}
-        whileTap={{ scale: 0.9 }}
-        className='text-white main-text -rotate-90 cursor-pointer md:text-xl focus:outline-none select-none'>
-        <a>Wip</a>
-      </motion.h1>
-      <motion.h1
-        initial={{
-          x: -200,
-          transition: { type: 'spring', duration: 1.5, delay: 1 },
-        }}
-        animate={{
-          x: 0,
-          rotate: -90,
-          transition: { type: 'spring', duration: 1.5, delay: 1 },
-        }}
-        whileHover={{ scale: 1.1 }}
-        whileTap={{ scale: 0.9 }}
-        className='text-white main-text -rotate-90 cursor-pointer md:text-xl focus:outline-none select-none'>
-        <Link to='/work'>Work</Link>
-      </motion.h1>
+
       <motion.div
         initial={{
           y: 250,
@@ -81,4 +51,4 @@ const Left = () => {
     </div>
   );
 };
-export default Left;
+export default Leftdefault;
