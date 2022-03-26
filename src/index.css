@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Hurricane&family=Lora:ital@1&family=Roboto&display=swap');
+
+* html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.logo-text {
+  font-family: 'Hurricane', cursive;
+}
+
+.main-text {
+  font-family: 'Roboto', sans-serif;
+}
+
+.secondary-text {
+  font-family: 'Lora', serif;
+}
+
+.height-fix {
+  height: 100vh;
+  height: calc(var(--vh, 1vh) * 100);
+}
+
+.loader {
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
