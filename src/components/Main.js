@@ -31,7 +31,7 @@ const Main = () => {
         className='w-full h-full flex justify-center items-center flex-col ml-5 md:ml-0'>
         <div>
           <img
-            className='loader w-48 md:w-full'
+            className='loader w-48 md:w-full cursor-pointer'
             src={loader}
             alt='loader'></img>
         </div>
