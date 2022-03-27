@@ -1,17 +1,9 @@
-import { Outlet } from 'react-router-dom';
-import { Top, Left, Right, Bottom } from './components';
-import './App.css';
+import Navbar from './Components/Navbar';
 
 function App() {
   return (
-    <div className='bg-[#000] w-full height-fix md:min-h-screen flex overflow-hidden'>
-      <Left />
-      <div className='w-full h-full flex flex-col'>
-        <Top />
-        <Outlet />
-        <Bottom />
-      </div>
-      <Right />
+    <div className='flex flex-col min-h-screen bg-[#0D0D0D]'>
+      <Navbar />
     </div>
   );
 }
