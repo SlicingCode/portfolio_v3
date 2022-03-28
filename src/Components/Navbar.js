@@ -11,17 +11,24 @@ const icon = {
   },
   visible: {
     pathLength: 1,
-    fill: 'rgba(242, 68, 5,)',
-    transition: { type: 'easeIn', duration: 2, delay: 1 },
+    stroke: 'rgba(242, 68, 5,1)',
+    transition: { type: 'easeIn', duration: 2, delay: 1.8 },
   },
 };
 
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
   return (
-    <nav className='flex justify-between items-center w-full p-4'>
+    <nav className='flex justify-between items-center w-full p-4 sticky top-0'>
       <img src={Logo} alt='logo' className='h-12 md:hidden' />
       <motion.div
+        initial={{
+          y: -200,
+        }}
+        animate={{
+          y: 0,
+          transition: { type: 'spring', duration: 1.5, delay: 1 },
+        }}
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
         className='cursor-pointer hidden md:flex'>
@@ -38,7 +45,7 @@ const Navbar = () => {
           <motion.path
             d='M35.1222 16.0805C39.8922 9.16566 50.1078 9.16566 54.8778 16.0805L69.0882 36.6807C74.5795 44.6411 68.8812 55.4946 59.2105 55.4946H30.7895C21.1188 55.4946 15.4205 44.6411 20.9118 36.6807L35.1222 16.0805Z'
             stroke='#F24405'
-            stroke-width='2'
+            strokeWidth='2'
             variants={icon}
             initial='hidden'
             animate='visible'
@@ -46,36 +53,87 @@ const Navbar = () => {
         </svg>
       </motion.div>
       <div className='flex'>
-        <ul className='text-white w-min flex space-x-5 mr-16 hidden md:flex'>
+        <ul className='text-white w-fit space-x-5 mr-16 hidden md:flex'>
           <motion.li
+            initial={{
+              y: -200,
+            }}
+            animate={{
+              y: 0,
+              transition: { type: 'spring', duration: 1.5, delay: 1 },
+            }}
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
-            className='main-text cursor-pointer'>
-            <span className='text-[#F24405]'>01.</span>About
+            className='main-text cursor-pointer hover:text-[#F24405] tracking-wider'>
+            <span className='text-[#F24405]'>01.</span> About
           </motion.li>
           <motion.li
+            initial={{
+              y: -200,
+            }}
+            animate={{
+              y: 0,
+              transition: {
+                type: 'spring',
+                duration: 1.5,
+                delay: 1.2,
+              },
+            }}
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
-            className='main-text cursor-pointer'>
-            <span className='text-[#F24405]'>02.</span>Experience
+            className='main-text cursor-pointer hover:text-[#F24405] tracking-wider'>
+            <span className='text-[#F24405]'>02.</span> Experience
           </motion.li>
           <motion.li
+            initial={{
+              y: -200,
+            }}
+            animate={{
+              y: 0,
+              transition: {
+                type: 'spring',
+                duration: 1.5,
+                delay: 1.3,
+              },
+            }}
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
-            className='main-text cursor-pointer'>
-            <span className='text-[#F24405]'>03.</span>Work
+            className='main-text cursor-pointer hover:text-[#F24405] tracking-wider'>
+            <span className='text-[#F24405]'>03.</span> Work
           </motion.li>
           <motion.li
+            initial={{
+              y: -200,
+            }}
+            animate={{
+              y: 0,
+              transition: {
+                type: 'spring',
+                duration: 1.5,
+                delay: 1.4,
+              },
+            }}
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
-            className='main-text cursor-pointer'>
-            <span className='text-[#F24405]'>04.</span>Wip
+            className='main-text cursor-pointer hover:text-[#F24405] tracking-wider'>
+            <span className='text-[#F24405]'>04.</span> Wip
           </motion.li>
           <motion.li
+            initial={{
+              y: -200,
+            }}
+            animate={{
+              y: 0,
+              transition: {
+                type: 'spring',
+                duration: 1.5,
+                delay: 1.5,
+              },
+            }}
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
-            className='main-text cursor-pointer'>
-            <span className='text-[#F24405]'>05.</span>Contact
+            className='main-text cursor-pointer hover:text-[#F24405] tracking-wider'>
+            <span className='text-[#F24405]'>05.</span> Contact
           </motion.li>
         </ul>
         <div className='flex relative'>
@@ -83,7 +141,6 @@ const Navbar = () => {
             <motion.div
               initial={{
                 rotate: 0,
-                transition: { type: 'easeIn', duration: 2, delay: 0.1 },
               }}
               animate={{
                 rotate: 180,
@@ -100,7 +157,6 @@ const Navbar = () => {
             <motion.div
               initial={{
                 x: 300,
-                transition: { type: 'spring', duration: 1, delay: 0 },
               }}
               animate={{
                 x: 0,

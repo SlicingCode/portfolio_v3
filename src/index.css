@@ -21,6 +21,10 @@ body {
   font-family: 'Lora', serif;
 }
 
+.test-margin {
+  margin: 0 auto;
+}
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
