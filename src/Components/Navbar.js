@@ -19,7 +19,7 @@ const icon = {
 const Navbar = () => {
   const [toggleMenu, setToggleMenu] = useState(false);
   return (
-    <nav className='flex justify-between items-center w-full p-4 sticky top-0'>
+    <nav className='flex justify-between items-center w-full p-4 sticky top-0 bg-[#0D0D0D] z-20'>
       <img src={Logo} alt='logo' className='h-12 md:hidden' />
       <motion.div
         initial={{
@@ -53,7 +53,7 @@ const Navbar = () => {
         </svg>
       </motion.div>
       <div className='flex'>
-        <ul className='text-white w-fit space-x-5 mr-16 hidden md:flex'>
+        <ul className='text-white w-fit space-x-5 mr-36 hidden md:flex '>
           <motion.li
             initial={{
               y: -200,
@@ -64,7 +64,7 @@ const Navbar = () => {
             }}
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
-            className='main-text cursor-pointer hover:text-[#F24405] tracking-wider'>
+            className='main-text cursor-pointer hover:text-[#F24405] tracking-wider select-none'>
             <span className='text-[#F24405]'>01.</span> About
           </motion.li>
           <motion.li
@@ -81,7 +81,7 @@ const Navbar = () => {
             }}
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
-            className='main-text cursor-pointer hover:text-[#F24405] tracking-wider'>
+            className='main-text cursor-pointer hover:text-[#F24405] tracking-wider select-none'>
             <span className='text-[#F24405]'>02.</span> Experience
           </motion.li>
           <motion.li
@@ -98,7 +98,7 @@ const Navbar = () => {
             }}
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
-            className='main-text cursor-pointer hover:text-[#F24405] tracking-wider'>
+            className='main-text cursor-pointer hover:text-[#F24405] tracking-wider select-none'>
             <span className='text-[#F24405]'>03.</span> Work
           </motion.li>
           <motion.li
@@ -115,7 +115,7 @@ const Navbar = () => {
             }}
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
-            className='main-text cursor-pointer hover:text-[#F24405] tracking-wider'>
+            className='main-text cursor-pointer hover:text-[#F24405] tracking-wider select-none'>
             <span className='text-[#F24405]'>04.</span> Wip
           </motion.li>
           <motion.li
@@ -132,7 +132,7 @@ const Navbar = () => {
             }}
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
-            className='main-text cursor-pointer hover:text-[#F24405] tracking-wider'>
+            className='main-text cursor-pointer hover:text-[#F24405] tracking-wider select-none'>
             <span className='text-[#F24405]'>05.</span> Contact
           </motion.li>
         </ul>
@@ -202,7 +202,7 @@ const Navbar = () => {
                 </motion.li>
               </ul>
               <div className='w-full flex justify-center mt-10'>
-                <button class='btn btn-outline border-[#F24405] text-[#F24405] hover:bg-[#F24405] hover:text-white main-text'>
+                <button class='btn btn-outline border-[#F24405] text-[#F24405] hover:bg-[#F24405] hover:text-white main-text hover:border-[#F24405]'>
                   Resume
                 </button>
               </div>

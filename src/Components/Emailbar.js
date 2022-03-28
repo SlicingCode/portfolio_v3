@@ -10,16 +10,21 @@ const Emailbar = () => {
         opacity: 1,
         transition: { type: 'easeIn', duration: 3, delay: 2 },
       }}
-      className='w-[40px] fixed bottom-0 left-auto right-[100px] z-10 hidden md:flex h-full'>
+      className='w-[40px] fixed bottom-0 left-auto right-[100px] z-50 hidden md:flex h-full'>
       <ul className='flex flex-col items-center justify-end space-y-28'>
         <li className='text-white h-3/5 border'>
           <hr />
         </li>
-        <li className='rotate-90'>
+        <motion.li
+          initial={{
+            rotate: 90,
+          }}
+          whileTap={{ scale: 0.9 }}
+          className='rotate-90 select-none'>
           <a className='hover:text-[#F24405] tracking-widest cursor-pointer main-text text-white'>
             chad@slicingcode.com
           </a>
-        </li>
+        </motion.li>
         <li className='text-white h-1/5 border'>
           <hr />
         </li>
