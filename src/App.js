@@ -25,7 +25,7 @@ function App() {
       </section>
       <section
         id='work'
-        className='flex justify-center flex-col items-center my-0 mx-auto w-4/5 md:w-8/12 mt-32'>
+        className='flex justify-center flex-col items-start my-0 mx-auto w-4/5 md:w-8/12 mt-32'>
         <Work />
       </section>
     </div>
