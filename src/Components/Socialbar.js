@@ -16,17 +16,29 @@ const Socialbar = () => {
       className='w-[40px] fixed bottom-0 left-[40px] right-auto z-10 hidden md:flex'>
       <ul className='flex flex-col items-center m-0 p-0 space-y-10 text-white'>
         <motion.li whileHover={{ scale: 1.5 }} whileTap={{ scale: 0.9 }}>
-          <a className='hover:text-[#F24405] cursor-pointer'>
+          <a
+            href='https://github.com/dAppTechie'
+            target='_blank'
+            rel='noopener noreferrer'
+            className='hover:text-[#ff7f50] cursor-pointer'>
             <FiGithub />
           </a>
         </motion.li>
         <motion.li whileHover={{ scale: 1.5 }} whileTap={{ scale: 0.9 }}>
-          <a className='hover:text-[#F24405] cursor-pointer'>
+          <a
+            href='https://twitter.com/SlicingCode'
+            target='_blank'
+            rel='noopener noreferrer'
+            className='hover:text-[#ff7f50] cursor-pointer'>
             <FiTwitter />
           </a>
         </motion.li>
         <motion.li whileHover={{ scale: 1.5 }} whileTap={{ scale: 0.9 }}>
-          <a className='hover:text-[#F24405] cursor-pointer'>
+          <a
+            href='https://www.linkedin.com/in/parkerchadlee/'
+            target='_blank'
+            rel='noopener noreferrer'
+            className='hover:text-[#ff7f50] cursor-pointer'>
             <FiLinkedin />
           </a>
         </motion.li>

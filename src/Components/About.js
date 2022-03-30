@@ -31,20 +31,20 @@ const About = () => {
   return (
     <motion.div ref={ref} animate={controls} className='flex flex-col'>
       <h1 className='text-white main-text md:text-2xl antialiased font-bold tracking-wide mt-7 flex items-center space-x-4'>
-        <span className='text-[#F24405] md:text-xl mr-2'>01. </span>About Me{' '}
+        <span className='text-[#ff7f50] md:text-xl mr-2'>01. </span>About Me{' '}
         <hr className='md:w-80 w-40 opacity-50' />
       </h1>
       <div className='flex text-white secondary-text flex-col md:flex-row'>
         <div className='flex flex-col'>
           <p className='md:w-3/4 mt-10 leading-normal tracking-wide antialiased'>
             {' '}
-            I'm a <span className='text-[#F24405]'>Humanitarian</span>,
-            <span className='text-[#F24405]'> Environmentalist</span> and{' '}
-            <span className='text-[#F24405]'>Full-Stack Developer</span> that
+            I'm a <span className='text-[#ff7f50]'>Humanitarian</span>,
+            <span className='text-[#ff7f50]'> Environmentalist</span> and{' '}
+            <span className='text-[#ff7f50]'>Full-Stack Developer</span> that
             loves to travel and write code. I've had the opportunity to work in{' '}
-            <span className='text-[#F24405]'>UI, UX</span>,{' '}
-            <span className='text-[#F24405]'>Front-end</span> and
-            <span className='text-[#F24405]'> Back-end</span> for multiple
+            <span className='text-[#ff7f50]'>UI, UX</span>,{' '}
+            <span className='text-[#ff7f50]'>Front-end</span> and
+            <span className='text-[#ff7f50]'> Back-end</span> for multiple
             businesses small and large where I helped design, develope and
             launch their online e- commerce presence
           </p>
@@ -55,36 +55,36 @@ const About = () => {
           <div className='flex mt-5 space-x-5'>
             <ul className='flex antialiased flex-col'>
               <li className='flex items-center'>
-                <BsArrowRightShort className='text-[#F24405]' />
+                <BsArrowRightShort className='text-[#ff7f50]' />
                 JavaScript
               </li>
               <li className='flex items-center'>
-                <BsArrowRightShort className='text-[#F24405]' />
+                <BsArrowRightShort className='text-[#ff7f50]' />
                 TypeScript
               </li>
               <li className='flex items-center'>
-                <BsArrowRightShort className='text-[#F24405]' />
+                <BsArrowRightShort className='text-[#ff7f50]' />
                 Node.js
               </li>
             </ul>
             <ul className='flex antialiased flex-col'>
               <li className='flex items-center'>
-                <BsArrowRightShort className='text-[#F24405]' />
+                <BsArrowRightShort className='text-[#ff7f50]' />
                 React.js
               </li>
               <li className='flex items-center'>
-                <BsArrowRightShort className='text-[#F24405]' />
+                <BsArrowRightShort className='text-[#ff7f50]' />
                 Framer Motion
               </li>
               <li className='flex items-center'>
-                <BsArrowRightShort className='text-[#F24405]' />
+                <BsArrowRightShort className='text-[#ff7f50]' />
                 Next.js
               </li>
             </ul>
           </div>
         </div>
         <div className='w-full mt-5 flex justify-center'>
-          <div className='md:w-[305px] md:h-[356px] w-[200px] h-[234px] border-4 border-[#F24405] rounded-lg relative mt-5 md:-mt-10 md:mr-10 '>
+          <div className='md:w-[305px] md:h-[356px] w-[200px] h-[234px] border-4 border-[#ff7f50] rounded-lg relative mt-5 md:-mt-10 md:mr-10 '>
             <motion.img
               whileHover={{ x: 15, y: 15 }}
               src={chadImg}

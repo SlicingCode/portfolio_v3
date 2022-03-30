@@ -21,7 +21,11 @@ const Emailbar = () => {
           }}
           whileTap={{ scale: 0.9 }}
           className='rotate-90 select-none'>
-          <a className='hover:text-[#F24405] tracking-widest cursor-pointer main-text text-white'>
+          <a
+            href='mailto:chad@slicingcode.com?subject=Hello!'
+            className='hover:text-[#ff7f50] tracking-widest cursor-pointer
+            main-text text-white'>
+            {' '}
             chad@slicingcode.com
           </a>
         </motion.li>

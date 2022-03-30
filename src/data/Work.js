@@ -7,6 +7,5 @@ export const WorkData = [
     tags: ['Next', 'TailwindCSS', 'Web3', 'Daisyui', 'Ethereum'],
     visit: 'https://bank-of-ethereum.vercel.app/',
     github: 'https://github.com/dAppTechie/bank-of-ethereum',
-    img: '/img/banketh.png',
   },
 ];

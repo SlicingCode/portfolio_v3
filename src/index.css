@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Hurricane&family=Lora:ital@1&family=Roboto&display=swap');
 
 * html {
+  /* Colors */
+  --main-color: #ff7f50;
+
   padding: 0;
   margin: 0;
   box-sizing: border-box;
@@ -23,8 +26,8 @@ body::-webkit-scrollbar-track {
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #f24405;
-  outline: 1px solid #f24405;
+  background-color: #ff7f50;
+  outline: 1px solid #ff7f50;
   border-radius: 100px;
 }
 
@@ -36,8 +39,8 @@ body::-webkit-scrollbar-thumb {
   font-family: 'Lora', serif;
 }
 
-.test-margin {
-  margin: 0 auto;
+.section {
+  scroll-margin-top: 100px;
 }
 
 @tailwind base;
