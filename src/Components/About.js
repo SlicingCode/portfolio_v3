@@ -46,7 +46,7 @@ const About = () => {
             <span className='text-[#ff7f50]'>Front-end</span> and
             <span className='text-[#ff7f50]'> Back-end</span> for multiple
             businesses small and large where I helped design, develope and
-            launch their online e- commerce presence
+            launch their online eCommerce presence.
           </p>
           <p className='mt-5 antialiased'>
             Here are a few technologies I’ve been working with recently:
