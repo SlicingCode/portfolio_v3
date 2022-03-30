@@ -9,6 +9,8 @@ import Work from './Components/Work';
 import Wip from './Components/Wip';
 import Contact from './Components/Contact';
 
+import { FiGithub, FiTwitter, FiLinkedin } from 'react-icons/fi';
+
 const icon = {
   hidden: {
     pathLength: 0,
@@ -89,7 +91,30 @@ function App() {
         className='flex justify-center flex-col items-center my-0 mx-auto w-4/5 md:w-8/12 mt-32 section'>
         <Contact />
       </section>
-      <footer className='flex w-full justify-center items-center my-10'>
+      <footer className='flex w-full justify-center items-center my-10 flex-col'>
+        <div className='flex md:hidden mb-5 space-x-6'>
+          <a
+            href='https://github.com/dAppTechie'
+            target='_blank'
+            rel='noopener noreferrer'
+            className='hover:text-[#ff7f50] cursor-pointer'>
+            <FiGithub className='text-2xl' />
+          </a>
+          <a
+            href='https://www.linkedin.com/in/parkerchadlee/'
+            target='_blank'
+            rel='noopener noreferrer'
+            className='hover:text-[#ff7f50] cursor-pointer'>
+            <FiLinkedin className='text-2xl' />
+          </a>
+          <a
+            href='https://twitter.com/SlicingCode'
+            target='_blank'
+            rel='noopener noreferrer'
+            className='hover:text-[#ff7f50] cursor-pointer'>
+            <FiTwitter className='text-2xl' />
+          </a>
+        </div>
         <p className='secondary-text text-white'>
           Designed and Built by Chad Parker &copy; {new Date().getFullYear()}
         </p>
