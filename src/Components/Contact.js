@@ -17,7 +17,7 @@ const Contact = () => {
           </p>
         </div>
         <div className='md:mt-5 mt-7'>
-          <a href='mailto:chad@slicingcode.com?subject=Hello!'>
+          <a href='mailto:chad@slicingcode.com?subject=Hello!' tabIndex={10}>
             <button className='btn btn-outline border-[#ff7f50] text-[#ff7f50] hover:bg-[#ff7f50] hover:text-white hover:border-[#ff7f50] main-text antialiased tracking-wider hover:bg-opacity-10'>
               Say hi
             </button>

@@ -24,7 +24,8 @@ const Emailbar = () => {
           <a
             href='mailto:chad@slicingcode.com?subject=Hello!'
             className='hover:text-[#ff7f50] tracking-widest cursor-pointer
-            main-text text-white'>
+            main-text text-white'
+            tabIndex={10}>
             {' '}
             chad@slicingcode.com
           </a>

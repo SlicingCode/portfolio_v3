@@ -23,7 +23,9 @@ const icon = {
 
 function App() {
   return (
-    <div
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
       className='flex flex-col min-h-screen bg-[#0D0D0D] w-full scroll-smooth'
       id='home'>
       <Navbar />
@@ -92,7 +94,7 @@ function App() {
           Designed and Built by Chad Parker &copy; {new Date().getFullYear()}
         </p>
       </footer>
-    </div>
+    </motion.div>
   );
 }
 

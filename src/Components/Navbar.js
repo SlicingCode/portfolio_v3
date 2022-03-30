@@ -35,7 +35,7 @@ const Navbar = () => {
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
         className='cursor-pointer hidden md:flex'>
-        <a href='#home'>
+        <a href='#home' tabIndex={0}>
           <svg
             width='90'
             height='76'
@@ -70,7 +70,7 @@ const Navbar = () => {
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
             className='main-text cursor-pointer hover:text-[#ff7f50] tracking-wider select-none'>
-            <a href='#about'>
+            <a href='#about' tabIndex={1}>
               <span className='text-[#ff7f50]'>01.</span> About
             </a>
           </motion.li>
@@ -89,7 +89,7 @@ const Navbar = () => {
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
             className='main-text cursor-pointer hover:text-[#ff7f50] tracking-wider select-none'>
-            <a href='#experience'>
+            <a href='#experience' tabIndex={2}>
               <span className='text-[#ff7f50]'>02.</span> Experience
             </a>
           </motion.li>
@@ -108,7 +108,7 @@ const Navbar = () => {
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
             className='main-text cursor-pointer hover:text-[#ff7f50] tracking-wider select-none'>
-            <a href='#work'>
+            <a href='#work' tabIndex={3}>
               <span className='text-[#ff7f50]'>03.</span> Work
             </a>
           </motion.li>
@@ -127,7 +127,7 @@ const Navbar = () => {
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
             className='main-text cursor-pointer hover:text-[#ff7f50] tracking-wider select-none'>
-            <a href='#workprogress'>
+            <a href='#workprogress' tabIndex={4}>
               <span className='text-[#ff7f50]'>04.</span> Wip
             </a>
           </motion.li>
@@ -146,7 +146,7 @@ const Navbar = () => {
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
             className='main-text cursor-pointer hover:text-[#ff7f50] tracking-wider select-none'>
-            <a href='#contact'>
+            <a href='#contact' tabIndex={5}>
               <span className='text-[#ff7f50]'>05.</span> Contact
             </a>
           </motion.li>
@@ -227,9 +227,11 @@ const Navbar = () => {
                 </motion.li>
               </ul>
               <div className='w-full flex justify-center mt-10'>
-                <button class='btn btn-outline border-[#ff7f50] text-[#ff7f50] hover:bg-[#ff7f50] hover:text-white main-text hover:border-[#ff7f50]'>
-                  Resume
-                </button>
+                <a href='/resume.pdf'>
+                  <button class='btn btn-outline border-[#ff7f50] text-[#ff7f50] hover:bg-[#ff7f50] hover:text-white main-text hover:border-[#ff7f50]'>
+                    Resume
+                  </button>
+                </a>
               </div>
             </motion.div>
           )}

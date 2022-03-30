@@ -27,12 +27,16 @@ const Hero = () => {
         building things with code.
       </p>
       <div className='flex justify-between space-x-5 mt-10'>
-        <button className='btn btn-outline border-[#ff7f50] text-[#ff7f50] hover:bg-[#ff7f50] hover:text-white hover:border-[#ff7f50] main-text antialiased tracking-wider hover:bg-opacity-10'>
-          Resume
-        </button>
-        <button className='btn btn-outline border-[#ff7f50] text-[#ff7f50] hover:bg-[#ff7f50] hover:text-white hover:border-[#ff7f50] main-text antialiased tracking-wider hover:bg-opacity-10'>
-          Blog
-        </button>
+        {/* set tabindex 9 */}
+        <a
+          href='/resume.pdf'
+          target='_blank'
+          rel='noopener noreferrer'
+          tabIndex={9}>
+          <button className='btn btn-outline border-[#ff7f50] text-[#ff7f50] hover:bg-[#ff7f50] hover:text-white hover:border-[#ff7f50] main-text antialiased tracking-wider hover:bg-opacity-10'>
+            Resume
+          </button>
+        </a>
       </div>
     </motion.div>
   );

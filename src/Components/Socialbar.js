@@ -20,8 +20,9 @@ const Socialbar = () => {
             href='https://github.com/dAppTechie'
             target='_blank'
             rel='noopener noreferrer'
-            className='hover:text-[#ff7f50] cursor-pointer'>
-            <FiGithub />
+            className='hover:text-[#ff7f50] cursor-pointer'
+            tabIndex={6}>
+            <FiGithub className='text-xl' />
           </a>
         </motion.li>
         <motion.li whileHover={{ scale: 1.5 }} whileTap={{ scale: 0.9 }}>
@@ -29,8 +30,9 @@ const Socialbar = () => {
             href='https://twitter.com/SlicingCode'
             target='_blank'
             rel='noopener noreferrer'
-            className='hover:text-[#ff7f50] cursor-pointer'>
-            <FiTwitter />
+            className='hover:text-[#ff7f50] cursor-pointer'
+            tabIndex={7}>
+            <FiTwitter className='text-xl' />
           </a>
         </motion.li>
         <motion.li whileHover={{ scale: 1.5 }} whileTap={{ scale: 0.9 }}>
@@ -38,8 +40,9 @@ const Socialbar = () => {
             href='https://www.linkedin.com/in/parkerchadlee/'
             target='_blank'
             rel='noopener noreferrer'
-            className='hover:text-[#ff7f50] cursor-pointer'>
-            <FiLinkedin />
+            className='hover:text-[#ff7f50] cursor-pointer'
+            tabIndex={8}>
+            <FiLinkedin className='text-xl' />
           </a>
         </motion.li>
         <li className='text-white h-40 border'>
