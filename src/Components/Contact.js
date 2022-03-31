@@ -10,7 +10,7 @@ const Contact = () => {
           Get in Touch
         </h1>
         <div className='flex justify-center items-center'>
-          <p className='secondary-text md:w-2/4 md:mt-4 mt-3'>
+          <p className='secondary-text md:w-2/4 md:mt-4 mt-3 text-center'>
             My inbox is always open. Whether you have a question or just want to
             say hi, I’ll try my best to get back to you! I’m always open to new
             opportunities!

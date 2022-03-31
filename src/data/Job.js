@@ -20,14 +20,14 @@ export const Job = [
     desc: [
       'Developed, maintained, and updated the companys eCommerce site',
       'Captured commercial photography of new products and created videos',
-      'Developed and maintained shopify for the companys eCommerce site',
+      'Maintained shopify for the companys eCommerce site',
     ],
   },
   {
     id: 3,
     title: 'Frontend Developer',
-    company: 'BigR Holdings',
-    short: 'BigR Holdings',
+    company: 'Big R Holdings',
+    short: 'Big R Holdings',
     dates: 'January 2013 - September 2016',
     desc: [
       'Designed website with html/CSS, React.js and JavaScript.',
