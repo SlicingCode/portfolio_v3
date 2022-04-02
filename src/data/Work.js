@@ -8,4 +8,13 @@ export const WorkData = [
     visit: 'https://bank-of-ethereum.vercel.app/',
     github: 'https://github.com/dAppTechie/bank-of-ethereum',
   },
+  {
+    id: 2,
+    type: 'Web App',
+    title: 'Better GitHub Profile',
+    desc: 'Even after customizing githubs default profile I still found it boring so I decided to develop my own using the github api.',
+    tags: ['Next', 'TailwindCSS', 'Chart.js', 'TypeScript', 'Github Polyglot'],
+    visit: 'https://www.dapptechie.com/',
+    github: 'https://github.com/dAppTechie/better-github-profile',
+  },
 ];

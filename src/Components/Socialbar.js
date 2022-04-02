@@ -17,7 +17,7 @@ const Socialbar = () => {
       <ul className='flex flex-col items-center m-0 p-0 space-y-10 text-white'>
         <motion.li whileHover={{ scale: 1.5 }} whileTap={{ scale: 0.9 }}>
           <a
-            href='https://github.com/dAppTechie'
+            href='https://www.dapptechie.com'
             target='_blank'
             rel='noopener noreferrer'
             className='hover:text-[#ff7f50] cursor-pointer'
