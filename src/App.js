@@ -94,7 +94,7 @@ function App() {
       <footer className='flex w-full justify-center items-center my-10 flex-col'>
         <div className='flex md:hidden mb-5 space-x-6'>
           <a
-            href='https://github.com/dAppTechie'
+            href='https://www.dapptechie.com'
             target='_blank'
             rel='noopener noreferrer'
             className='hover:text-[#ff7f50] cursor-pointer'>
