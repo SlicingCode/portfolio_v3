@@ -36,8 +36,8 @@ const WorkCard = () => {
       {WorkData.map(({ index, type, title, desc, tags, visit, github }) => (
         <div
           key={index}
-          className='w-full md:w-96 flex flex-col rounded-tl-[50px] rounded-br-[50px] bg-white items-center md:m-5 mt-3'>
-          <div className='flex justify-end w-11/12'>
+          className='w-full md:w-96 flex flex-col rounded-tl-[50px] rounded-br-[50px] bg-white items-center md:m-5 mt-3 h-[400px] relative'>
+          <div className='flex justify-end w-11/12 '>
             <h1 className='text-gray-800 text-xl main-text opacity-60 mt-2'>
               {type}
             </h1>
@@ -60,28 +60,28 @@ const WorkCard = () => {
                 </li>
               ))}
             </ul>
-            <div className='flex justify-end items-center space-x-3 md:mt-20 md:-mr-10 mb-1 mt-3 -mr-7'>
-              <motion.a
-                whileHover={{ scale: 0.9 }}
-                whileTap={{ scale: 0.9 }}
-                href={github}
-                target='_blank'
-                rel='noopener noreferrer'
-                alt='Bank of Ethereumn'>
-                <BsGithub className='text-black text-4xl cursor-pointer select-none' />
-              </motion.a>
-              <motion.a
-                whileHover={{ scale: 0.9 }}
-                whileTap={{ scale: 0.9 }}
-                href={visit}
-                target='_blank'
-                rel='noopener noreferrer'
-                alt='Bank of Ethereumn'>
-                <button className='btn btn-active rounded-br-[50px] px-10 text-white'>
-                  Visit
-                </button>
-              </motion.a>
-            </div>
+          </div>
+          <div className='flex justify-end items-center space-x-3 absolute bottom-1 right-1'>
+            <motion.a
+              whileHover={{ scale: 0.9 }}
+              whileTap={{ scale: 0.9 }}
+              href={github}
+              target='_blank'
+              rel='noopener noreferrer'
+              alt='Bank of Ethereumn'>
+              <BsGithub className='text-black text-4xl cursor-pointer select-none' />
+            </motion.a>
+            <motion.a
+              whileHover={{ scale: 0.9 }}
+              whileTap={{ scale: 0.9 }}
+              href={visit}
+              target='_blank'
+              rel='noopener noreferrer'
+              alt='Bank of Ethereumn'>
+              <button className='btn btn-active rounded-br-[50px] px-10 text-white'>
+                Visit
+              </button>
+            </motion.a>
           </div>
         </div>
       ))}
