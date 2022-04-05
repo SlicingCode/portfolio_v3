@@ -36,7 +36,7 @@ const WorkCard = () => {
       {WorkData.map(({ index, type, title, desc, tags, visit, github }) => (
         <div
           key={index}
-          className='w-full md:w-96 flex flex-col rounded-tl-[50px] rounded-br-[50px] bg-white items-center md:m-5 mt-3 h-[400px] relative'>
+          className='w-full md:w-96 flex flex-col rounded-tl-[50px] rounded-br-[50px] bg-white items-center md:m-5 mt-3 md:h-[400px] relative'>
           <div className='flex justify-end w-11/12 '>
             <h1 className='text-gray-800 text-xl main-text opacity-60 mt-2'>
               {type}
