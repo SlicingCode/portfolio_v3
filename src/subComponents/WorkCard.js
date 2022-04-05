@@ -37,12 +37,12 @@ const WorkCard = () => {
         <div
           key={index}
           className='w-full md:w-96 flex flex-col rounded-tl-[50px] rounded-br-[50px] bg-white items-center md:m-5 mt-3 md:h-[400px] relative'>
-          <div className='flex justify-end w-11/12 '>
+          <div className='flex justify-end w-11/12'>
             <h1 className='text-gray-800 text-xl main-text opacity-60 mt-2'>
               {type}
             </h1>
           </div>
-          <div className='w-3/4 flex flex-col justify-start mt-4'>
+          <div className='w-3/4 flex flex-col justify-start mt-4 mb-32'>
             <h1 className='text-black font-bold md:text-3xl text-2xl main-text'>
               {title}
             </h1>
