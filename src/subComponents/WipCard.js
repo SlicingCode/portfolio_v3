@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import uuid from 'react-uuid';
 import { useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import { motion } from 'framer-motion';
@@ -32,9 +33,9 @@ const WipCard = () => {
       ref={ref}
       animate={controls}
       className='w-full flex flex-col md:flex-row md:m-5'>
-      {WipData.map(({ index, type, title, desc, tags, visit, github }) => (
+      {WipData.map(({ type, title, desc, tags, visit, github }) => (
         <div
-          key={index}
+          key={uuid()}
           className='w-full md:w-96 flex flex-col rounded-tl-[50px] rounded-br-[50px] bg-white items-center md:m-5 mt-3'>
           <div className='flex justify-end w-11/12'>
             <h1 className='text-gray-800 text-xl main-text opacity-60 mt-2'>
@@ -51,9 +52,9 @@ const WipCard = () => {
             <hr className='bg-black h-1 opacity-60 mt-5' />
 
             <ul className='flex mt-3 flex-wrap'>
-              {tags.map((tag, index) => (
+              {tags.map((tag) => (
                 <li
-                  key={index}
+                  key={uuid()}
                   className='text-gray-800 mr-2 text-xs main-text'>
                   #{tag}
                 </li>
