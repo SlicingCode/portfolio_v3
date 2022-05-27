@@ -27,7 +27,7 @@ const Socialbar = () => {
         </motion.li>
         <motion.li whileHover={{ scale: 1.5 }} whileTap={{ scale: 0.9 }}>
           <a
-            href='https://twitter.com/SlicingCode'
+            href='https://twitter.com/SlicingCode1'
             target='_blank'
             rel='noopener noreferrer'
             className='hover:text-[#ff7f50] cursor-pointer'
