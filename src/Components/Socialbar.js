@@ -17,7 +17,7 @@ const Socialbar = () => {
       <ul className='flex flex-col items-center m-0 p-0 space-y-10 text-white'>
         <motion.li whileHover={{ scale: 1.5 }} whileTap={{ scale: 0.9 }}>
           <a
-            href='https://www.dapptechie.com'
+            href='https://github.com/SlicingCode'
             target='_blank'
             rel='noopener noreferrer'
             className='hover:text-[#ff7f50] cursor-pointer'
@@ -27,7 +27,7 @@ const Socialbar = () => {
         </motion.li>
         <motion.li whileHover={{ scale: 1.5 }} whileTap={{ scale: 0.9 }}>
           <a
-            href='https://twitter.com/ChadLeeOfficial'
+            href='https://twitter.com/SlicingCode'
             target='_blank'
             rel='noopener noreferrer'
             className='hover:text-[#ff7f50] cursor-pointer'
@@ -37,7 +37,7 @@ const Socialbar = () => {
         </motion.li>
         <motion.li whileHover={{ scale: 1.5 }} whileTap={{ scale: 0.9 }}>
           <a
-            href='https://www.linkedin.com/in/chadleeofficial/'
+            href='https://www.linkedin.com/in/SlicingCode/'
             target='_blank'
             rel='noopener noreferrer'
             className='hover:text-[#ff7f50] cursor-pointer'

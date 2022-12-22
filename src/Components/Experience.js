@@ -58,7 +58,7 @@ const Experience = () => {
             <h3 className='main-text text-base text-white'>
               {title} <span className='text-[#ff7f50]'>@ {company}</span>
             </h3>
-            <h4 className='main-text text-sm mt-1 text-stone'>{dates}</h4>
+            <h4 className='main-text text-sm mt-1 text-white opacity-50'>{dates}</h4>
             {desc.map((item) => (
               <ul key={item} className='md:mt-1 mt-3'>
                 <li className='text-white flex items-center antialiased secondary-text md:text-sm'>
