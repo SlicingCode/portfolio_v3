@@ -15,6 +15,6 @@ export const WipData = [
       'Hardhat',
     ],
     visit: 'https://www.hiptzo.chat',
-    github: 'https://github.com/dAppTechie/Hiptzo-Chat',
+    github: 'https://github.com/SlicingCode/Hiptzo-Chat',
   },
 ];
